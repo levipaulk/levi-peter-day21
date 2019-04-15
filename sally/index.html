@@ -8,27 +8,54 @@
 </head>
 <body>
     <div id="application-root"></div>
+  
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js"
+    crossorigin>
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    crossorigin>
+  </script>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js"
+    crossorigin>
+  </script>
+  
+  <script type="text/babel">
 
-    <script src="https://unpkg.com/react@16/umd/react.development.js">
-    </script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
-    </script>
-    <script>
-        // Our code will go here
-        function App(props) {
-            // console.log props;
-            return (
-                <header>
-                {props.children}
-                </header>
-            );
-        }
-        ReactDOM.render(
-            <App className='my-class'>
-                <h1>Current Page Title!</h1>
-            </App>,
-            document.querySelector('#application-root')
-        );
-    </script>
-</body>
+function App(props) {
+  return (
+    
+    <body>
+        <header>
+            {props.children}
+            test
+        </header>
+
+        <h1>Sally Student</h1>
+        <p>I'm an aspiring full stack web developer. I love cats, coding, and crocheting.</p>
+        
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+        </ul>
+        
+        <h2>Contact Info</h2>
+        <p>Twitter: <a href="https://twitter.com/sallyStudent">@sallyStudent</a></p>
+    </body>
+
+  );
+}
+
+
+ReactDOM.render(
+  <App />,
+  document.querySelector('#application-root')
+);
+  </script>
+  </body>
 </html>
