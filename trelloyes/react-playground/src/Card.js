@@ -1,13 +1,15 @@
 import React from 'react';
 
-function card () {
+function Card (props) {
+    
+
     return (
         <div className='card'>
-           <h3>test</h3>
-           <p>test</p>
+           <h3>{props.title}</h3>
+           <p>{props.content}</p>
         </div>
         );
 }
 
 
-export default card;
+export default Card;

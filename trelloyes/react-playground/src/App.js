@@ -1,16 +1,18 @@
 import React from 'react';
-import card from './Card';
+import List from './List';
 
-function App() {
-  const lCard = <card />;
+
+function App(props) {
+
   return (
     <main className='App'>
-      <header class="App-header">
+      <header className="App-header">
         <h1>Trelloyes!</h1>
         
       </header>
-      <card />
-      <list /> 
+      <List store={props.store} />
+
+     
     </main>
   );
 }
