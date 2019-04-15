@@ -33,7 +33,7 @@ function App(props) {
             test
         </header>
 
-        <h1>Sally Student</h1>
+        <h1>{props.name}</h1>
         <p>I'm an aspiring full stack web developer. I love cats, coding, and crocheting.</p>
         
         <h2>Skills</h2>
@@ -53,7 +53,7 @@ function App(props) {
 
 
 ReactDOM.render(
-  <App />,
+  <App name="sally student test" />,
   document.querySelector('#application-root')
 );
   </script>
