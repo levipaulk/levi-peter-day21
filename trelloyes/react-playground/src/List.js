@@ -17,10 +17,10 @@ function List (props) {
        </header>
 
        <div className="List-cards">
-           <p>
+           <div>
            {listCards}
            {/* <Card title={allCards.a.title} content={allCards.a.content} /> */}
-           </p>
+           </div>
 
        </div>
            
